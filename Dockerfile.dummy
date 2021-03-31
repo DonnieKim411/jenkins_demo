@@ -1,0 +1,14 @@
+FROM python:3.8.3-slim as python_base
+
+RUN  python --version
+WORKDIR /work
+RUN touch dummy.log
+RUN echo "hello universe" > dummy.log
+RUN cat dummy.log
+RUN pip --version
+
+FROM python_base as dev
+RUN pip install psutil==5.8.0
+WORKDIR /work
+
+ENTRYPOINT [ "/bin/bash" ]
