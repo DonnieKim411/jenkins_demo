@@ -1,8 +1,8 @@
-Jenkinsfile (Declarative Pipeline)
-node {
-    // checkout scm 
-    /* .. snip .. */
-}
+// Jenkinsfile (Declarative Pipeline)
+// node {
+//     // checkout scm 
+//     /* .. snip .. */
+// }
 pipeline {
     stages {
         stage('base-build') {
