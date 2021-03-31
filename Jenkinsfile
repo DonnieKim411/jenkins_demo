@@ -4,6 +4,7 @@
 //     /* .. snip .. */
 // }
 pipeline {
+    agent { any }
     stages {
         stage('base-build') {
             environment {
