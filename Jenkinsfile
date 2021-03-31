@@ -14,7 +14,7 @@ pipeline {
                     filename "Dockerfile.dummy"
                     dir "."
                     label "tester:${env.BUILD_TAG}"
-                    registryCredntialId "donnie_docker_hub"
+                    registryCredentialsId "donnie_docker_hub"
                 }
             }
             steps {
