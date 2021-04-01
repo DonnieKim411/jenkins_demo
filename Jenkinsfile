@@ -52,7 +52,7 @@
 
 
 pipeline {
-    agent any
+    agent none
     stages {
         stage('base-build') {
             environment {
