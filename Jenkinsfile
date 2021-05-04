@@ -67,9 +67,9 @@ pipeline {
                     
                 }
             }
-            // steps {
-            //     echo 'Building ..'
-            // }
+            steps {
+                echo 'Building base-build'
+            }
         }
         // stage('base-test') {
         //     steps {
