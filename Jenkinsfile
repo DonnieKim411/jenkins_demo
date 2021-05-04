@@ -52,7 +52,7 @@
 
 
 pipeline {
-    agent none
+    agent any
     stages {
         stage('base-build') {
             environment {
@@ -67,14 +67,14 @@ pipeline {
                     
                 }
             }
-            steps {
-                echo 'Building ..'
-            }
+            // steps {
+            //     echo 'Building ..'
+            // }
         }
-        stage('base-test') {
-            steps {
-                sh "pip list | grep psutil"
-            }
-        }
+        // stage('base-test') {
+        //     steps {
+        //         sh "pip list | grep psutil"
+        //     }
+        // }
     }
 }
